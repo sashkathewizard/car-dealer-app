@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Dealer App
 
-## Getting Started
+## Overview
 
-First, run the development server:
+The Car Dealer App is a web application that allows users to filter and view vehicle models based on make and year. The app provides a user-friendly interface for selecting vehicle types and years, and then displays relevant vehicle models.
+
+## Features
+
+- **Vehicle Filtering:** Allows users to filter vehicle models based on make and year.
+- **Dynamic Data Fetching:** Retrieves vehicle data from an external API.
+- **Responsive Design:** Provides a user-friendly interface that adapts to different screen sizes.
+
+## Setup and Configuration
+
+### 1. Environment Variables
+
+Create a `.env.local` file in the root directory to store your environment variables. For example:
+
+```
+NEXT_PUBLIC_API_URL=https://vpic.nhtsa.dot.gov/api/vehicles
+
+```
+
+### 2. Setup ESLint and Prettier
+
+To maintain code quality and consistency, ESLint and Prettier are used in this project.
+
+- **ESLint Configuration:** The ESLint configuration is in `.eslintrc.json` and is set up to use Next.js and Prettier.
+- **Prettier Configuration:** The Prettier configuration is in `.prettierrc` and ensures consistent code formatting.
+
+### 3. Install Dependencies
+
+Install the required dependencies using npm:
+
+```bash
+npm install
+
+```
+
+### 4. Running the Application
+
+To run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` in your browser to access the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 5. Building the Application
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To build the application for production:
 
-## Learn More
+```bash
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the production server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm start
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you'd like to contribute to the project, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
